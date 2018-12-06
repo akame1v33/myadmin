@@ -1,14 +1,10 @@
 
-
-     
-    
-
 <div class = 'sidebar'>
     <div class="sidebar-wrapper">
         <div class="logo" >
             <a href="http://www.creative-tim.com" class="simple-text">
                 <div class="logo-img">
-                    <img src="/assets/img/angular2-logo-white.png"/>
+                    <img src="/assets/img/rimuru.png"/>
                 </div>
             Slime Application
             </a>
@@ -96,7 +92,7 @@
                 </div> -->
              <li routerLinkActive="active" class ='dropdown'>
                     <a data-toggle="collapse" href="#_planet" role="button">
-                        <p>Planets</p>
+                        <p>Planets <i class = 'fa fa-angle-double-down'></i></p>
                     </a>
 
                     <ul  class="collapse" id="_planet">
@@ -115,11 +111,11 @@
             <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
                 <a  [routerLink]="[menuItem.path]">
                     <!-- <i class="{{menuItem.icon}}"></i> -->
-                    <p>{{menuItem.title}}</p>
+                    <p><i class ='{{menuItem.icon}}'></i>{{menuItem.title}}</p>
                 </a>
             </li>
         </ul>
     </div>
 
-    <div class="sidebar-background" style="background-image: url(/assets/img/sidebar-5.jpg)"></div>
+    <div class="sidebar-background" style="background-image: url(/assets/img/sidebar-6.jpg)"></div>
 </div>
