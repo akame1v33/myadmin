@@ -8,21 +8,22 @@ import { AppComponent } from './app.component';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import  { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserPermissionModule } from './permission/permission.module'
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    DashboardComponent
   ],
   imports: [
+    UserPermissionModule,
     BrowserModule,
     AppRoutingModule,
     SidebarModule,
     NavbarModule,
     NgbModule.forRoot(),
-    FormsModule
+    FormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
