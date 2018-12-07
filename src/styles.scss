@@ -1,5 +1,39 @@
+@import '_variables';
+@import '_typography';
+
 .wrapper {
     position: relative;
     top: 0;
     height: 100vh;
+}
+
+@import '_variables';
+
+
+//card
+.card {
+
+    label {
+        font-size: $font-size-base;
+        font-weight: $font-weight-normal;
+        color: $dark-gray;
+        margin-bottom: 0px;
+        
+        i{
+            font-size: $font-paragraph;
+        }
+    }
+    
+    label{
+        font-size: $font-size-small;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .title{
+        margin: $none;
+        margin-bottom: 15px;
+        color: $black-color;
+        font-weight: $font-weight-light;
+    }
 }

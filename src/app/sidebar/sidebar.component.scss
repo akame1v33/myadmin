@@ -67,6 +67,7 @@
     .logo {
         padding: $navbar-padding-a;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        max-height:$navbar-max-height;
 
         p {
             float: left;
@@ -141,6 +142,7 @@
             &:hover > a{
                 background: rgba(255,255,255,0.13);
                 opacity: 1;
+                text-decoration: none;
             }
 
             &.active > a {
@@ -238,29 +240,29 @@
 }
 
 
-// .main-panel {
-//     background: rgba(203,203,210,.15);
-//     position: relative;
-//     z-index: 2;
-//     float: right;
-//     width: $sidebar-width;
-//     min-height: 100%;
-//     overflow: auto;
-//     max-height: 100%;
-//     height: 100%;
-//     .main-content{
-//         padding: 30px 15px;
-//         min-height: calc(100% - 123px);
-//     }
+.main-panel {
+    background: rgba(203,203,210,.15);
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: $sidebar-width;
+    min-height: 100%;
+    overflow: auto;
+    max-height: 100%;
+    height: 100%;
+    .main-content{
+        padding: 30px 15px;
+        min-height: calc(100% - 123px);
+    }
 
-//     > .footer{
-//         border-top: 1px solid #e7e7e7;
-//     }
+    > .footer{
+        border-top: 1px solid #e7e7e7;
+    }
 
-//     .navbar{
-//         margin-bottom: 0;
-//     }
-// }
+    .navbar{
+        margin-bottom: 0;
+    }
+}
 
 // .sidebar,
 // .main-panel,
@@ -291,7 +293,8 @@
         padding: 0;
 
         // @include transform-translate-x(260px);
-        // @include transition (0.22s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+        @include transform-translate-x(200px);
+        @include transition (0.22s, cubic-bezier(0.685, 0.0473, 0.346, 1));
         > ul {
             position: relative;
             z-index: 4;

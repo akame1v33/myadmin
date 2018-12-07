@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 
 declare const $: any;
 declare interface RouteInfo {
@@ -11,10 +11,10 @@ export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Dashboard',  icon: 'fa fa-dashboard', class: '' },
     { path: '/user', title: 'User Profile',  icon:'fa fa-user', class: '' },
     { path: '/table', title: 'Table List',  icon:'fa fa-table', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'fa fa-text', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'pe-7s-science', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'pe-7s-map-marker', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'pe-7s-bell', class: '' },
+    // { path: '/typography', title: 'Typography',  icon:'fa fa-text', class: '' },
+    // { path: '/icons', title: 'Icons',  icon:'pe-7s-science', class: '' },
+    // { path: '/maps', title: 'Maps',  icon:'pe-7s-map-marker', class: '' },
+    // { path: '/notifications', title: 'Notifications',  icon:'pe-7s-bell', class: '' },
 ];
 
 @Component({
