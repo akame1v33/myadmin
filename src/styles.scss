@@ -1,12 +1,5 @@
 @import '_variables';
 @import '_typography';
-
-.wrapper {
-    position: relative;
-    top: 0;
-    height: 100vh;
-}
-
 @import '_variables';
 
 
@@ -36,4 +29,9 @@
         color: $black-color;
         font-weight: $font-weight-light;
     }
+}
+
+//button
+.btn {
+    border-radius: 2px;
 }

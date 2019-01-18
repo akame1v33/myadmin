@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../interfaces/user';
-import { Name } from '../interfaces/name';
+import { User } from '../../interfaces/user';
+import { Name } from '../../interfaces/name';
+
 
 @Component({
   selector: 'app-user',

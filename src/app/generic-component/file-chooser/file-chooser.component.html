@@ -1,0 +1,25 @@
+<div class = 'form-group'>
+  <label for="" class = 'd-block'>{{label}}</label>
+  <input type="file"  class = 'd-none' #file (change)="change($event.target.files)">
+  <button type="button" class="btn" (click)="file.click()"> Browse </button>
+  <span>No selected IMG</span>
+  <div>
+    <div class="row" *ngIf="origPreview">
+      <div class="col-md-6">
+          <h1>ORIG</h1>
+          <img [src]="sanitizer.bypassSecurityTrustUrl(origPreview)" alt="">
+      </div>
+      <div class="col-md-6">
+          <h1>Compress Preview</h1>
+          <img [src]="sanitizer.bypassSecurityTrustUrl(compressPreview)" alt="">
+      </div>
+    </div>
+    <div>
+      
+    </div>
+    <div>
+       
+      </div>
+    
+  </div>
+</div>
