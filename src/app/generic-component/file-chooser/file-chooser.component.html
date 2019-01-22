@@ -7,11 +7,11 @@
     <div class="row" *ngIf="origPreview">
       <div class="col-md-6">
           <h1>ORIG</h1>
-          <img [src]="sanitizer.bypassSecurityTrustUrl(origPreview)" alt="">
+          <img style ='max-width:100%' [src]="sanitizer.bypassSecurityTrustUrl(origPreview)" alt="">
       </div>
       <div class="col-md-6">
           <h1>Compress Preview</h1>
-          <img [src]="sanitizer.bypassSecurityTrustUrl(compressPreview)" alt="">
+          <img style ='max-width:100%' [src]="sanitizer.bypassSecurityTrustUrl(compressPreview)" alt="">
       </div>
     </div>
     <div>

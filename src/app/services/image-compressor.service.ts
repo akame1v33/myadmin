@@ -31,7 +31,7 @@ export class ImageCompressorService {
                 lastModified: Date.now()
               })
             )
-          }, 'image/jpeg', 0.00)
+          }, 'image/jpeg', 0.8)
         }
       }
     });
